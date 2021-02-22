@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MarkZagors Landing Page</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 class="header">Mark Zagors landing page</h1>
-
-        <div class="container">
-            <div class="item-a">
-                <h1>
-                    Hello, <br>
-                    I am Markas Zagorskas <br>
-                    Software engineer student
-                </h1>
-                <p>
-                    These are my projects, take a look!
-                </p>
-            </div>
-            <div class="item-b" id="project-a">
-                <input type="image" src="ProjectAThumbnail.PNG" id="project-a-button" />
-            </div>
+        <div id="mainDesc">
+            <h1>Markas Zagorskas portfolio</h1>
+            <p>
+                Hello! Take a look at some of my projects I've made<br>
+                Scroll down to see more
+            </p>
         </div>
 
+        <div id="mainContent">
+            <button>
+                <div class="buttonOverlay" onclick="window.location = 'CubeGL/landing.html'">
+                    <h1>Rotating cube customize</h1>
+                    <p>Made with: JS and WebGL</p>
+                </div>
+            </button>
+        </div>
+        
         <script src="main.js" async defer></script>
     </body>
 </html>

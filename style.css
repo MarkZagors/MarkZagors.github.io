@@ -1,66 +1,88 @@
 :root {
-  --dark: #495464;
-  --bright: #f4f4f2;
-  --middle1: #e8e8e8;
-  --middle2: #bbbfca;
+  --dark: #222525;
+  --bright: #f4f9f9;
+  --middle1: #ccf2f4;
+  --middle2: #a4ebf3;
 }
 
 body {
-  background: var(--dark);
   margin: 0;
   padding: 0;
+  background-image: url("_images/BG1.png");
 }
 
-.header {
-  background: var(--bright);
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0.2em;
-  text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 15pt;
+#firstContainer {
+  display: flex;
+}
+
+#mainDesc {
   color: var(--dark);
+  width: 100%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  display: grid;
-  height: 930px;
-  grid-template-columns: 5% 45% 45% 5%;
-  grid-template-rows: 50% auto 50px;
-  overflow: hidden;
+#mainDesc > h1 {
+  margin: 0;
+  margin-top: 15rem;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  background-image: url("_images/BG_Title.png");
+  border-bottom: 3px solid;
+  border-image-source: linear-gradient(90deg, var(--dark) 0%, var(--middle2) 100%);
+  border-image-slice: 1;
 }
 
-.item-a {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-family: Georgia, "Times New Roman", Times, serif;
+#mainDesc > p {
+  margin: 0;
+  font-size: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 50px;
+}
+
+#mainContent {
+  width: 100%;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+
+#mainContent > button {
+  display: table-cell;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 1em;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  background-image: url("_images/Project_RotatingCube.JPG");
+}
+
+.buttonOverlay {
+  margin: 0;
+  width:100%;
+  height: 100%;
+  background-color:#000;
+  opacity: 0.0;
+  transition: 0.3s;
   color: var(--bright);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.item-a h1 {
-  font-size: 60px;
+.buttonOverlay:hover {
+  opacity: 0.75;
 }
 
-.item-a p {
+.buttonOverlay > h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.buttonOverlay > p {
   font-size: 25px;
 }
 
-.item-b {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  overflow: hidden;
-  background: rgb(255, 72, 40);
-}
-
-.item-b input {
-  width: 100%;
-}
-
-.item-b input:hover {
-  width: 95%;
-}
