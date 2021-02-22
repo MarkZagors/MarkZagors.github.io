@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("./images/BG1.png");
+  background-image: url("BG1.png");
 }
 
 #firstContainer {
@@ -29,7 +29,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 50px;
-  background-image: url("./images/BG_Title.png");
+  background-image: url("BG_Title.png");
   border-bottom: 3px solid;
   border-image-source: linear-gradient(90deg, var(--dark) 0%, var(--middle2) 100%);
   border-image-slice: 1;
@@ -57,7 +57,7 @@ body {
   border: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
-  background-image: url("./images/Project_RotatingCube.JPG");
+  background-image: url("Project_RotatingCube.JPG");
 }
 
 .buttonOverlay {
