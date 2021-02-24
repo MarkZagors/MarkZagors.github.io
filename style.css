@@ -52,12 +52,11 @@ body {
 #mainContent > button {
   display: table-cell;
   width: 100%;
-  height: 550px;
+  height: 400px;
   margin-bottom: 1em;
   border: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
-  background-image: url("./Project_RotatingCube.jpg");
 }
 
 .buttonOverlay {
